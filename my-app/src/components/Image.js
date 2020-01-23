@@ -28,6 +28,10 @@ const Image = props => {
           width={100}
           timeout={3000} //3 secs
         />)}
+      {props.image && !props.isLoading &&
+        (<img alt='dog-img' src={props.image.message}>
+          {props.image.message}
+        </img>)}
     </div>
   )
 }

@@ -12,6 +12,14 @@ export const reducer = (state = initialState, action) => {
         isLoading: true
       }
 
+    case 'FETCHING_DONE':
+      return {
+        ...state,
+        isLoading: false,
+        image: action.payload.message,
+        status: action.payload.status
+      }
+
     default:
       return state
   }
