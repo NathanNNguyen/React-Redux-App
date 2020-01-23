@@ -1,4 +1,5 @@
 import React from 'react';
+import './Image.css';
 
 import { connect } from 'react-redux';
 import Loader from 'react-loader-spinner';
@@ -15,8 +16,8 @@ const mapStateToProps = state => {
 
 const Image = props => {
   return (
-    <div>
-      <button onClick={props.fetchImage}>Try me</button>
+    <div className='flex'>
+      <button className='btn' onClick={props.fetchImage}>Get a new dog</button>
       {!props.image && !props.isLoading && (
         <h3>Click the button</h3>
       )}
@@ -29,9 +30,7 @@ const Image = props => {
           timeout={3000} //3 secs
         />)}
       {props.image && !props.isLoading &&
-        (<img alt='dog-img' src={props.image.message}>
-          {props.image.message}
-        </img>)}
+        (<img className='img' alt='dog-img' src={props.image}/>)}
     </div>
   )
 }
