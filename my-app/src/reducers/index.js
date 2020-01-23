@@ -1,6 +1,7 @@
 const initialState = {
   isLoading: false,
-  activity: null,
+  image: null,
+  status: ''
 }
 
 export const reducer = (state = initialState, action) => {
