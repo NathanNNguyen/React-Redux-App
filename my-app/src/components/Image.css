@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-bottom: 2rem;
+  animation: action 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes action {
+  0% { transform: translateY(0); }
+  50% {transform: translateY(-.2rem)}
+  100% { transform: translateY(0); }
+}
+
+.img {
+  width: 50%;
+  height: 25rem;
+  margin-bottom: 2rem;
+}
