@@ -7,11 +7,14 @@
 
 .btn {
   margin-bottom: 2rem;
-}
-.btn:hover{
-  transform: translateY(-3px);
-  transition: .3s;
+  animation: action 1.5s;
   animation-iteration-count: infinite;
+}
+
+@keyframes action {
+  0% { transform: translateY(0); }
+  50% {transform: translateY(-.2rem)}
+  100% { transform: translateY(0); }
 }
 
 .img {
