@@ -8,8 +8,14 @@
 .btn {
   margin-bottom: 2rem;
 }
+.btn:hover{
+  transform: translateY(-3px);
+  transition: .3s;
+  animation-iteration-count: infinite;
+}
 
 .img {
-  width: 25%;
+  width: 50%;
   height: 25rem;
+  margin-bottom: 2rem;
 }

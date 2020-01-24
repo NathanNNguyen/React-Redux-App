@@ -5,7 +5,7 @@ import Image from './components/Image';
 function App() {
   return (
     <div className="App">
-      <h1>Fetch a dog!!!</h1>
+      <h1 className='title'>Fetch a dog!!!</h1>
       <Image />
     </div>
   );

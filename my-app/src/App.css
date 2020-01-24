@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  border: .5px dotted dimgrey;
+  background: honeydew;
+}
+
+.title {
+  text-shadow: 2px 2px 20px black;
+  width: 40%;
+  margin: 2rem auto;
 }
 
 .App-logo {
